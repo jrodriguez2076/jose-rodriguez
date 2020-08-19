@@ -14,11 +14,18 @@
 		background: _palette(border-bg);
 		margin: 0 0 _size(element-margin) 0;
 
+		.feature-logo {
+			max-width: 3rem;
+			max-height: auto;
+		}
+
 		section {
-			@include padding(3em, 3em, (0.5em, 0, 0, 4em));
+			@include padding(1em, 3em, (0.5em, 0, 2.5em, 4em));
 			width: 50%;
 			border-top: solid 1px _palette(border);
 			position: relative;
+			display: flex;
+			justify-content: flex;
 
 			&:nth-child(-n + 2) {
 				border-top-width: 0;
@@ -48,6 +55,11 @@
 					}
 				}
 			}
+		}
+
+		h3 {
+			margin-left: 3rem !important;
+			margin-bottom: 0px !important;
 		}
 
 		&.inactive {
