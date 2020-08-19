@@ -91,7 +91,7 @@
 
 		@include breakpoint('<=small') {
 			section {
-				@include padding(2em, 1.5em, (0.5em, 0, 0, 4em));
+				@include padding(1em, 3em, (0.5em, 0, 2.5em, 4em));
 
 				.icon {
 					left: 1.5em;
