@@ -1789,8 +1789,8 @@ button:hover:active:after,
 }
 
 .features .feature-logo {
-  max-width: 3rem;
-  max-height: auto;
+  width: 3rem !important;
+  height: 3rem !important;
 }
 
 .features section {

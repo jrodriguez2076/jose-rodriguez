@@ -15,8 +15,8 @@
 		margin: 0 0 _size(element-margin) 0;
 
 		.feature-logo {
-			max-width: 3rem;
-			max-height: auto;
+			width: 3rem !important;
+			height: 3rem !important;
 		}
 
 		section {
