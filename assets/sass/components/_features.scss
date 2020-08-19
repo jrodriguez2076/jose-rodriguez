@@ -102,7 +102,7 @@
 
 		@include breakpoint('<=xsmall') {
 			section {
-				@include padding(2em, 1.5em, (0, 0, 0, 0));
+				@include padding(1em, 3em, (0.5em, 0, 2.5em, 2em));
 
 				.icon {
 					left: 0;

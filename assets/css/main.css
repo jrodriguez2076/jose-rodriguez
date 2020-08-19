@@ -1978,7 +1978,7 @@ button:hover:active:after,
 
 @media screen and (max-width: 480px) {
   .features section {
-    padding: 2em 1.5em 0.1em 1.5em ;
+    padding: 1.5em 3em 1.5em 5em ;
   }
   .features section .icon {
     left: 0;
