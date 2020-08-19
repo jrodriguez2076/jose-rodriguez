@@ -1951,6 +1951,15 @@ button:hover:active:after,
     border-top-width: 1px !important;
     border-left-width: 0 !important;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: flex;
+        -ms-flex-pack: flex;
+            justify-content: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .features section:first-child {
     border-top-width: 0 !important;
