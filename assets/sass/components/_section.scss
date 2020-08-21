@@ -43,3 +43,9 @@
 	.section-title {
 		text-align: center;
 	}
+
+	@media (max-width: 767px) {
+		.job-item {
+			text-align: center;
+		}
+	}

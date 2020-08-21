@@ -2645,6 +2645,12 @@ header h6 + p {
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .job-item {
+    text-align: center;
+  }
+}
+
 /* Split */
 .split {
   display: -moz-flex;
@@ -2807,6 +2813,14 @@ body.is-ie .spotlights > section {
 }
 
 .spotlights > section:nth-child(3) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.spotlights > section:nth-child(5) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.spotlights > section:nth-child(6) {
   background-color: rgba(0, 0, 0, 0.1);
 }
 

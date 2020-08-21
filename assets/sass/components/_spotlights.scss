@@ -72,6 +72,17 @@
 				background-color: rgba(0,0,0,0.1);
 			}
 
+			&:nth-child(4) {
+			}
+
+			&:nth-child(5) {
+				background-color: rgba(0,0,0,0.05);
+			}
+
+			&:nth-child(6) {
+				background-color: rgba(0,0,0,0.1);
+			}
+
 			&.inactive,
 			body.is-preload & {
 				> .image {
