@@ -18,6 +18,27 @@
 			width: 3rem !important;
 			height: 3rem !important;
 		}
+		
+		section.full-feature {
+			@include padding(1em, 1em, (0.5em, 0, 1.5em, 1em));
+		}
+
+		.job-text {
+			font-size: smaller;
+		}
+
+		.job-stack {
+			display: flex;
+			flex-direction: column;
+			align-content: flex-start;
+			margin-right: 5rem;
+		}
+
+		.stack-item {
+			width: 2rem;
+			height: 2rem;
+			margin-bottom: 1rem;
+		}
 
 		section {
 			@include padding(1em, 3em, (0.5em, 0, 2.5em, 4em));
@@ -110,5 +131,15 @@
 					top: 0;
 				}
 			}
+		}
+
+		.job-title {
+			display: flex;
+			flex-direction: column;
+			align-content: flex-start;
+		}
+
+		.job-description {
+			margin: 0 0 2rem 0 !important;
 		}
 	}

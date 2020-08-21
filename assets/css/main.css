@@ -1793,6 +1793,33 @@ button:hover:active:after,
   height: 3rem !important;
 }
 
+.features section.full-feature {
+  padding: 1.5em 1em 0.5em 2em ;
+}
+
+.features .job-text {
+  font-size: smaller;
+}
+
+.features .job-stack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  margin-right: 5rem;
+}
+
+.features .stack-item {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
 .features section {
   padding: 1.5em 3em 1.5em 7em ;
   width: 50%;
@@ -1985,6 +2012,22 @@ button:hover:active:after,
     position: relative;
     top: 0;
   }
+}
+
+.features .job-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.features .job-description {
+  margin: 0 0 2rem 0 !important;
 }
 
 /* Form */
