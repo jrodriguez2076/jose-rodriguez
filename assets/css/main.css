@@ -97,7 +97,7 @@ html {
 }
 
 body {
-  background: #EF6C33;
+  background: #0C4A60;
 }
 
 body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3137,14 +3137,14 @@ body.is-preload .wrapper.fade > .inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #0C4A60;
+  background-color: #EF6C33;
   cursor: default;
   padding: 1.75em 2em;
 }
 
 #header > .title {
   border: 0;
-  color: #ABDFF1;
+  color: #E1DDDB;
   display: block;
   font-size: 1.25em;
   font-weight: bold;
