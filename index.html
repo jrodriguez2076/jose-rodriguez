@@ -340,7 +340,7 @@
 								</div>
 							</div>
 							<ul class="actions">
-								<li><a href="" class="button submit" onclick="sendEmail()">Send Message</a></li>
+								<li><a href="" class="button submit" onclick="sendEmail(event)">Send Message</a></li>
 							</ul>
 						</form>
 					</section>
@@ -386,13 +386,13 @@
 	<script src="https://smtpjs.com/v3/smtp.js"></script>
 	<script>
 		function sendEmail(e) {
-			console.log("sending!!")
+			event.preventDefault();
 			Email.send({
-			SecureToken : "167949ee-fc3b-4a82-b241-5ff2061c368e",
-			To : 'jrodriguez2076@gmail.com',
-			From : "joserodriguezcontact@gmail.com",
-			Subject : "Test Email",
-			Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+				SecureToken : "167949ee-fc3b-4a82-b241-5ff2061c368e",
+				To : 'jrodriguez2076@gmail.com',
+				From : "joserodriguezcontact@gmail.com",
+				Subject : "Test Email",
+				Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
 			}).then(
 				message => alert("mail sent successfully")
 			);
