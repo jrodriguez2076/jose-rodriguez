@@ -324,7 +324,7 @@
 				<h2 class="section-title" style="margin-bottom: 2rem;">Get in touch</h2>
 				<div class="split style1">
 					<section>
-						<form >
+						<form  id="contactForm">
 							<div class="fields">
 								<div class="field half">
 									<label for="name">Name</label>
@@ -340,7 +340,7 @@
 								</div>
 							</div>
 							<ul class="actions">
-								<li><a href="#" class="button submit" onclick="sendEmail(event)">Send Message</a></li>
+								<li><a href="#" class="button" onclick="sendEmail()">Send Message</a></li>
 							</ul>
 						</form>
 					</section>
@@ -383,7 +383,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
 	<script>
 		function sendEmail(event) {
 			event.preventDefault();
@@ -397,6 +397,28 @@
 				message => alert("mail sent successfully")
 			);
 		}
+	</script> -->
+	<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+	(function(){
+		emailjs.init("user_gE5QOTWSLBdZKizr0cGn9"); //Insert your User ID
+	})();
+	</script>
+	<script>
+
+	function sendEmail() {
+		emailjs.sendForm('elastic-email', 'template_16e2fr3', '#contactForm') //Insert your email service ID and email template ID
+			.then(function(response) {
+			console.log('SUCCESS!', response.status, response.text);
+			var frm = document.getElementById('contactForm');
+   			frm.reset();  // Reset all form data
+   			// return false; // Prevent page refresh
+			}, function(error) {
+			console.log('FAILED...', error);
+			});
+	}
 	</script>
 </body>
 
