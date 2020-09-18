@@ -27,7 +27,7 @@
 					<li><a href="#one">My Skills</a></li>
 					<li><a href="#two">My Projects</a></li>
 					<li><a href="#three">My Experience</a></li>
-					<li><a href="#four">Get in touch</a></li>
+					<li><a href="#contact">Get in touch</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -324,7 +324,7 @@
 				<h2 class="section-title" style="margin-bottom: 2rem;">Get in touch</h2>
 				<div class="split style1">
 					<section>
-						<form method="post" action="mailto:jrodriguez2076@gmail.com" enctype="text/plain">
+						<form >
 							<div class="fields">
 								<div class="field half">
 									<label for="name">Name</label>
@@ -340,7 +340,7 @@
 								</div>
 							</div>
 							<ul class="actions">
-								<li><a href="" type="submit" class="button submit">Send Message</a></li>
+								<li><a href="" class="button submit" onclick="sendEmail()">Send Message</a></li>
 							</ul>
 						</form>
 					</section>
@@ -383,7 +383,21 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script>
+		function sendEmail(e) {
+			console.log("sending!!")
+			Email.send({
+			SecureToken : "167949ee-fc3b-4a82-b241-5ff2061c368e",
+			To : 'jrodriguez2076@gmail.com',
+			From : "joserodriguezcontact@gmail.com",
+			Subject : "Test Email",
+			Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+			}).then(
+				message => alert("mail sent successfully")
+			);
+		}
+	</script>
 </body>
 
 </html>
